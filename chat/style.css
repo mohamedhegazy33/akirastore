@@ -1,0 +1,24 @@
+div{
+    width: 30px;
+    height: 16px;
+    position: relative;
+    color: #fff;
+    margin:50px auto;
+}
+div p{
+    margin-left: 3px;
+    color: #fff;
+    margin-left: 10px;
+    text-transform: capitalize;
+}
+div::before{
+    content: "";
+    display: block;
+    width: 0;
+    border-width: 15px 0 0 15px;
+    border-style: solid;
+    margin-left: 5px;
+    bottom: -5px;
+    border-color: #f00 transparent #f00 transparent;
+    position: absolute;
+}

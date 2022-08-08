@@ -1,0 +1,979 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Akira</title>
+    <!-- link css -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet"href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.css" crossorigin="anonymous" />
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.js" crossorigin="anonymous"></script>
+
+    
+</head>
+<body>
+    <header class="top-header">
+        <div class="header-content">
+            <div class="lanauge" onclick="showdropdown()" id="lanaugedrop">
+                <span class="left-border"></span>
+                <div class="header-lanauge-flag">
+                    <img src="img/flag.jpg" alt="">
+                    <span>english</span>
+                    <i class="header-angle-down fa fa-angle-down" ></i>
+                </div>
+                <ul class="lanauge-dropdown lanauge-dropdown-toggle" id="uldrop">
+                    <li class="list-lanauge-dropdown">
+                        <span class="li-dropdown-flags">
+                            <img src="img/flag.jpg" alt="">
+                        </span>
+                        <span class="li-dropdown-title">english</span>
+                    </li>
+                    <li class="list-lanauge-dropdown">
+                        <span class="li-dropdown-flags">
+                            <img src="img/flag 2.jpg" alt="">
+                        </span>
+                        <span class="li-dropdown-title">Español</span>
+                    </li>
+                    <li class="list-lanauge-dropdown">
+                        <span class="li-dropdown-flags">
+                            <img src="img/flag 3.jpg" alt="">
+                        </span>
+                        <span class="li-dropdown-title">Français</span>
+                    </li>
+                    <li class="list-lanauge-dropdown">
+                        <span class="li-dropdown-flags">
+                            <img src="img/flag 4.jpg" alt="">
+                        </span>
+                        <span class="li-dropdown-title">Italiano</span>
+                    </li>
+                </ul>
+            
+            </div>
+            <div class="curr" onclick="currdropdown()" id="currencydropdown">
+                <div class="curr-content">
+                    <span class="dollar">$</span>
+                    <span class="curr-type">usd</span>
+                    <i class="header-angle-down fa fa-angle-down"></i>
+               </div>
+               <ul class="curr-dropdown curr-dropdown-toggle" id="currdropdowntoggle">
+                <li class="list-curr-dropdown">
+                    <span class="curr-type-eur">
+                        eur €
+                    </span>
+                </li>
+                <li class="list-curr-dropdown">
+                    <span class="curr-type-usd">
+                        usd $
+                    </span>
+                </li>
+               </ul>
+
+            </div>
+            <div class="free-shipping">
+                <p class="free-shipping-des">
+                    FREE SHIPPING FOR ALL ORDERS OF $150
+
+                </p>
+                <div class="free-shipping-social_media">
+                    <a href=""><i class="fa fa-facebook"></i></a>
+                    <a href=""><i class="fa fa-twitter"></i></a>
+                    <a href=""><i class="fa fa-google-plus"></i></a>
+                    <a href=""><i class="fa fa-pintrest"></i></a>
+                    <a href=""><i class="fa fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="contact-us"><p class="header-contact-des">contact us</p></div>
+            <div class="faqs"><p class="header-contact-des">faqs</p></div>
+        </div>
+    </header>
+    <!-- top header end -->
+   <div style="position:relative;">
+    <div class="main-container">
+        <nav class="nav-content">
+            <div class="nav-logo">
+                <a href=""><img src="img/demo2-logo.png" alt="logo"></a>
+            </div>
+            <div class="nav-home">
+                <div class="home-content-hover">
+                    <span>home</span>
+                <i class="header-angle-down fa fa-angle-down"></i>
+                </div>
+                <div class="home-dropdown-row1">
+                    <ul class="home-dropdown">
+                        <li class="mega-home-dropdown">
+                            <div class="home-dropdown-product-img">
+                                <img src="img/a-1.png" alt="">
+                            </div>
+                            <span class="home-dropdown-product-des">
+                                demo fashion 1
+                            </span>
+                        </li>
+                        <li class="mega-home-dropdown">
+                            <div class="home-dropdown-product-img">
+                                <img src="img/a-2.png" alt="">
+                            </div>
+                            <span class="home-dropdown-product-des">
+                                demo fashion 2
+                            </span>
+                        </li>
+                        <li class="mega-home-dropdown">
+                            <div class="home-dropdown-product-img">
+                                <img src="img/a-3.png" alt="">
+                            </div>
+                            <span class="home-dropdown-product-des">
+                                demo organic
+                            </span>
+                        </li>
+                        <li class="mega-home-dropdown">
+                            <div class="home-dropdown-product-img">
+                                <div class="new-dropdown-product-img-2"></div>
+                                <img src="img/a-9.png" alt="">
+                            </div>
+                            <span class="home-dropdown-product-des">
+                                demo electronic
+                            </span>
+                        </li>
+                        <li class="mega-home-dropdown">
+                            <div class="new-dropdown-product-img-2 home-img-new-position"></div>
+                            <div class="home-dropdown-product-img">
+                                <img src="img/a-4.png" alt="">
+                            </div>
+                            <span class="home-dropdown-product-des">
+                                demo anivio 1
+                            </span>
+                        </li>
+                        
+                    </ul>
+                    <ul class="home-dropdown">
+                        <li class="mega-home-dropdown">
+                            <div class="home-dropdown-product-img">
+                                <img src="img/a-1.png" alt="">
+                            </div>
+                            <span class="home-dropdown-product-des">
+                                demo fashion 1
+                            </span>
+                        </li>
+                        <li class="mega-home-dropdown">
+                            <div class="home-dropdown-product-img">
+                                <img src="img/a-2.png" alt="">
+                            </div>
+                            <span class="home-dropdown-product-des">
+                                demo fashion 2
+                            </span>
+                        </li>
+                        <li class="mega-home-dropdown">
+                            <div class="home-dropdown-product-img">
+                                <img src="img/a-3.png" alt="">
+                            </div>
+                            <span class="home-dropdown-product-des">
+                                demo organic
+                            </span>
+                        </li>
+
+                        
+                    </ul>
+
+                </div>
+
+            </div>
+            <div class="shop-nav">
+                <div class="shop-chat-bubble"><span>hot</span></div>
+                <div class="shop-content-hover">
+                    <span>shop</span>
+                    <i class="header-angle-down fa fa-angle-down"></i>
+                </div>
+                <div class="mega-shop-dropdown-menu">
+               <div class="mega-shop-dropdown-menu-col1">
+                 <ul class="shop-dropdown-menu">
+                    <div class="shop-dropdown-chat-bubble position-1"><span>new</span></div>
+                    <li class="list-mega-shop-dropdown-menu-title">shop pages</li>
+                    <li class="list-mega-shop-dropdown-menu">left sidebar</li>
+                    <li class="list-mega-shop-dropdown-menu">right sidebar</li>
+                    <li class="list-mega-shop-dropdown-menu">without sidebar</li>
+                    <li class="list-mega-shop-dropdown-menu">filter dropdown</li>
+                    <li class="list-mega-shop-dropdown-menu">filter on canvas</li>
+                    <li class="list-mega-shop-dropdown-menu">filter on area</li>
+                    <li class="list-mega-shop-dropdown-menu">filter on sidebar</li>
+                    <div class="shop-dropdown-chat-bubble position-2"><span>new</span></div>
+                    <li class="list-mega-shop-dropdown-menu">infinite ajax scroll</li>
+                   <div class="shop-chat-bubble position-4"><span>hot</span></div>
+                    <li class="list-mega-shop-dropdown-menu">load more button</li>
+                    <div class="shop-dropdown-chat-bubble position-3"><span>new</span></div>
+                    <li class="list-mega-shop-dropdown-menu">custom width</li>
+                    
+                 </ul>
+               </div>
+               <div class="mega-shop-dropdown-menu-col2">
+                    <ul class="shop-dropdown-menu">
+                    <li class="list-mega-shop-dropdown-menu-title">shop pages</li>
+                    <li class="list-mega-shop-dropdown-menu">Only Categories</li>
+                    <li class="list-mega-shop-dropdown-menu">List view</li>
+                    <li class="list-mega-shop-dropdown-menu">Grid view</li>
+                    <li class="list-mega-shop-dropdown-menu">Custom per page</li>
+                    <li class="list-mega-shop-dropdown-menu">Quick view</li>
+                    <li class="list-mega-shop-dropdown-menu">Quick shop</li>
+                    <li class="list-mega-shop-dropdown-menu">Compare</li>
+                    <li class="list-mega-shop-dropdown-menu">Wishlist</li>
+                    <li class="list-mega-shop-dropdown-menu">Catalog mode</li>
+                    <li class="list-mega-shop-dropdown-menu">Full Ajax Filter</li>
+                    
+                 </ul>
+               </div>
+               <div class="mega-shop-dropdown-menu-col3">
+                <ul class="shop-dropdown-menu">
+                <li class="list-mega-shop-dropdown-menu-title">PRODUCT PAGES</li>
+                <li class="list-mega-shop-dropdown-menu">Default</li>
+                <li class="list-mega-shop-dropdown-menu">Horizontal Thumbnails</li>
+                <div class="shop-dropdown-chat-bubble position-5"><span>new</span></div>
+                <li class="list-mega-shop-dropdown-menu">Vertical Thumbnails</li>
+                <li class="list-mega-shop-dropdown-menu">Inner Zoom</li>
+                <li class="list-mega-shop-dropdown-menu">Horizontal Tabs</li>
+                <div class="shop-dropdown-chat-bubble position-6"><span>new</span></div>
+                <li class="list-mega-shop-dropdown-menu">Accordion Tabs</li>
+                <li class="list-mega-shop-dropdown-menu">Accordion (Show All)</li>
+                <li class="list-mega-shop-dropdown-menu">Simple Product</li>
+                <li class="list-mega-shop-dropdown-menu">Product Combinations</li>
+                <li class="list-mega-shop-dropdown-menu">Pack Products</li>
+                
+             </ul>
+           </div>
+           <div class="mega-shop-dropdown-menu-col4">
+            <ul class="shop-dropdown-menu">
+            <li class="list-mega-shop-dropdown-menu-title-5">PRODUCT DETAIL LAYOUT</li>
+            <li class="list-mega-shop-dropdown-menu">Left Sidebar</li>
+            <li class="list-mega-shop-dropdown-menu">right sidebar</li>
+            <li class="list-mega-shop-dropdown-menu">without sidebar</li>
+            <li class="list-mega-shop-dropdown-menu">Variation Swatches</li>
+            <li class="list-mega-shop-dropdown-menu">Image Swatch</li>
+            <li class="list-mega-shop-dropdown-menu">Grid Images</li>
+            <li class="list-mega-shop-dropdown-menu">Video Product</li>
+            <li class="list-mega-shop-dropdown-menu">Countdown Timer</li>
+            <li class="list-mega-shop-dropdown-menu">Downloadable Product</li>
+            <div class="shop-dropdown-chat-bubble position-3"><span>new</span></div>
+            <li class="list-mega-shop-dropdown-menu">custom width</li>
+            
+                </ul>
+            </div>
+            <div class="mega-shop-dropdown-menu-col5">
+                <ul class="shop-dropdown-menu">
+                <li class="list-mega-shop-dropdown-menu-title-6">PRODUCT BUTTON TYPE</li>
+                <li class="list-mega-shop-dropdown-menu">Product Type 1</li>
+                <li class="list-mega-shop-dropdown-menu">Product Type 2</li>
+            <div class="shop-dropdown-chat-bubble position-7"><span>new</span></div>
+                <li class="list-mega-shop-dropdown-menu">Product Type 3</li>
+            <div class="shop-dropdown-chat-bubble position-8"><span>new</span></div>
+                <li class="list-mega-shop-dropdown-menu">Product Type 4</li>
+            <div class="shop-dropdown-chat-bubble position-9"><span>new</span></div>
+                <li class="list-mega-shop-dropdown-menu">Product Type 5</li>
+            <div class="shop-dropdown-chat-bubble position-10"><span>new</span></div>
+                <li class="list-mega-shop-dropdown-menu">Product Type 6</li>
+            <div class="shop-dropdown-chat-bubble position-11"><span>new</span></div>
+                <li class="list-mega-shop-dropdown-menu">Product Type 7</li>
+                <li class="list-mega-shop-dropdown-menu">Product Type 8</li>
+                <li class="list-mega-shop-dropdown-menu">Label Circle</li>
+                <li class="list-mega-shop-dropdown-menu">Label Rectangular</li>
+                
+             </ul>
+           </div>
+                </div>
+
+            </div>
+            <div class="nav-blog"> 
+                <div class="nav-blog-content">
+                    <span>blog</span>
+                    <i class="header-angle-down fa fa-angle-down"></i>
+                </div>
+                <ul class="blog-dropdown">
+                    <li class="list-blog-dropdown">blog type 1</li>
+                    <hr class="line-dropdown">
+                    <li class="list-blog-dropdown">blog type 2</li>
+                    <hr class="line-dropdown">
+                    <li class="list-blog-dropdown">blog type 3</li>
+                    <hr class="line-dropdown">
+                    <li class="list-blog-dropdown">blog type 4</li>
+                    <hr class="line-dropdown">
+                    <li class="list-blog-dropdown">blog type 5</li>
+                    <hr class="line-dropdown">
+                    <li class="list-blog-dropdown">blog type 6</li>
+                    <hr class="line-dropdown">
+                    <li class="list-blog-dropdown">blog type 7</li>
+                </ul>
+            </div>
+            <div class="nav-pages">
+               <div class="nav-pages-content">
+                <span>pages</span>
+                <i class="header-angle-down fa fa-angle-down"></i>
+               </div>
+                <ul class="pages-dropdown">
+                    <div class="pagesdropdown-chat-bubble-1"><span>elementor</span></div>
+                    <li class="list-pages-dropdown">contact us</li>
+                    <hr class="line-dropdown">
+                    <div class="pagesdropdown-chat-bubble-2"><span>elementor</span></div>
+                    <li class="list-pages-dropdown">about us</li>
+                    <hr class="line-dropdown">
+                    <div class="pagesdropdown-chat-bubble-3"><span>new</span></div>
+                    <li class="list-pages-dropdown">404 with elementor</li>
+                </ul>
+            </div>
+            <div class="nav-ElementorLive">
+                <div class="ElementorLive-chat-bubble"><span>52+ Widgets</span></div>
+                <div class="elementor-content-hover">
+                    <span>Elementor Live</span>
+                <i class="header-angle-down fa fa-angle-down"></i> 
+                </div>
+                <div class="nav-elementor-mega-menu">
+                    <ul class="elmentor-dropdown">
+                        <li class="list-mega-elmentor-dropdown-menu-title">PRODUCT DETAIL LAYOUT</li>
+                        <li class="list-mega-elmentor-dropdown-menu">Left Sidebar</li>
+                        <li class="list-mega-elmentor-dropdown-menu">right sidebar</li>
+                        <li class="list-mega-elmentor-dropdown-menu">without sidebar</li>
+                        <li class="list-mega-elmentor-dropdown-menu">Variation Swatches</li>
+                        <li class="list-mega-elmentor-dropdown-menu-title">Image Swatch</li>
+                        <li class="list-mega-elmentor-dropdown-menu">Grid Images</li>
+                        <li class="list-mega-elmentor-dropdown-menu">Video Product</li>
+                        <li class="list-mega-elmentor-dropdown-menu">Countdown Timer</li>
+                        <li class="list-mega-elmentor-dropdown-menu">Downloadable Product</li>
+                        <li class="list-mega-elmentor-dropdown-menu">custom width</li>
+                    </ul>
+                    <ul class="elmentor-dropdown">
+                        <li class="list-mega-elmentor-dropdown-menu-title">PRODUCT DETAIL LAYOUT</li>
+                        <li class="list-mega-elmentor-dropdown-menu">Left Sidebar</li>
+                        <li class="list-mega-elmentor-dropdown-menu">right sidebar</li>
+                        <li class="list-mega-elmentor-dropdown-menu">without sidebar</li>
+                        <li class="list-mega-elmentor-dropdown-menu">Variation Swatches</li>
+                        <li class="list-mega-elmentor-dropdown-menu-title">Image Swatch</li>
+                        <li class="list-mega-elmentor-dropdown-menu">Grid Images</li>
+                        <li class="list-mega-elmentor-dropdown-menu">Video Product</li>
+                        <li class="list-mega-elmentor-dropdown-menu">Countdown Timer</li>
+                        <li class="list-mega-elmentor-dropdown-menu">Downloadable Product</li>
+                        <li class="list-mega-elmentor-dropdown-menu">custom width</li>
+                    </ul>
+                    <ul class="elmentor-dropdown">
+                        <li class="list-mega-elmentor-dropdown-menu-title">PRODUCT DETAIL LAYOUT</li>
+                        <li class="list-mega-elmentor-dropdown-menu">Left Sidebar</li>
+                        <li class="list-mega-elmentor-dropdown-menu">right sidebar</li>
+                        <li class="list-mega-elmentor-dropdown-menu">without sidebar</li>
+                        <li class="list-mega-elmentor-dropdown-menu">Variation Swatches</li>
+                        <li class="list-mega-elmentor-dropdown-menu-title">Image Swatch</li>
+                        <li class="list-mega-elmentor-dropdown-menu">Grid Images</li>
+                        <li class="list-mega-elmentor-dropdown-menu">Video Product</li>
+                        <li class="list-mega-elmentor-dropdown-menu">Countdown Timer</li>
+                        <li class="list-mega-elmentor-dropdown-menu">Downloadable Product</li>
+                        <li class="list-mega-elmentor-dropdown-menu">custom width</li>
+                    </ul>
+                    <ul class="elmentor-dropdown">
+                        <li class="list-mega-elmentor-dropdown-menu-title">PRODUCT DETAIL LAYOUT</li>
+                        <li class="list-mega-elmentor-dropdown-menu">Left Sidebar</li>
+                        <li class="list-mega-elmentor-dropdown-menu">right sidebar</li>
+                        <li class="list-mega-elmentor-dropdown-menu">without sidebar</li>
+                        <li class="list-mega-elmentor-dropdown-menu">Variation Swatches</li>
+                        <li class="list-mega-elmentor-dropdown-menu-title">Image Swatch</li>
+                        <li class="list-mega-elmentor-dropdown-menu">Grid Images</li>
+                        <li class="list-mega-elmentor-dropdown-menu">Video Product</li>
+                        <li class="list-mega-elmentor-dropdown-menu">Countdown Timer</li>
+                        <li class="list-mega-elmentor-dropdown-menu">Downloadable Product</li>
+                        <li class="list-mega-elmentor-dropdown-menu">custom width</li>
+                    </ul>
+                    
+                </div>
+
+            </div>
+            <div class="nav-buy">
+                <div class="buy-chat-bubble"><span>only $69</span></div>
+                <span>buy</span>
+                <i class="header-angle-down fa fa-angle-down"></i>
+            </div>
+            <div class="nav-myaccount">
+                <span>my account</span>
+
+            </div>
+            <div class="nav-icons">
+                <i class="fa fa-search"></i>
+                <i class="fa fa-heart-o"></i>
+                <i class="fa fa-shopping-cart">
+                    <span class="cart-total">$0.00</span>
+                </i>
+                <span class="cart-counter"><span>0</span></span>
+            </div>
+        </nav>
+    </div>
+</div>
+    <!-- main-nav end -->
+    <!-- site start -->
+    <div class="globa-main-container">
+        <!-- home slider -->
+           <section class="home">
+             <!-- Slider main container -->
+             <div class="swiper">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+               <!-- Slides -->
+               <div class="swiper-slide">
+                <div class="slider-img-1-content">
+               <p>men collection 2021</p>
+               <h2>get up to 50% off select style.</h2>
+               <a href="#">shop now</a>
+                </div>
+                 <img src="img/demo2-slider1.jpg" alt="">
+               </div>
+               <div class="swiper-slide">
+            <div class="slider-img-1-content">
+               <p>women collection 2021</p>
+               <h2>get up to 50% off select style.</h2>
+               <a href="#">shop now</a>
+           </div>
+           <img src="img/demo2-slider2.jpg" alt="">
+        </div>
+         <div class="swiper-slide">
+           <div class="slider-img-center-content">
+               <p> collection 2021</p>
+               <h2>get up to 50% off select style.</h2>
+               <a href="#">shop now</a>
+           </div>
+           <img src="img/demo2-slider3.jpg" alt="">
+       </div>
+   
+         ...
+       </div>
+       <!-- pagination -->
+       <div class="swiper-pagination"></div>
+     
+       <!--  navigation buttons -->
+       <div class="swiper-button-prev"></div>
+       <div class="swiper-button-next"></div>
+     
+       <!-- If we need scrollbar -->
+       <div class="swiper-scrollbar"></div>
+     </div>
+     <div class="gallary-home">
+        <div class="gallary-img">
+            <img src="img/demo2-MEN.jpg" alt="">
+        <span class="galleary-btn"><a href="">men</a></span>
+        </div>
+        <div class="gallary-img">
+            <img src="img/demo2-WOMEN.jpg" alt="">
+        <span class="galleary-btn"><a href="">women</a></span>
+        </div>
+        <div class="gallary-img">
+            <img src="img/demo2-ACCESSORIES.jpg" alt="">
+        <span class="galleary-btn"><a href="">accessories</a></span>
+        </div>
+     </div>
+    </section>
+        <!-- home slider end -->
+        <!-- FEATURED PRODUCTS -->
+        <section class="featured-products py">
+            <div class="section-title">
+                <span>akira collection</span>
+                <h3>featured products</h3>
+                <p>Nullam gravida, dolor ac ultrices lobortis, mi dolor justo.</p>
+            </div>
+        </section>
+        <!-- FEATURED PRODUCT end -->
+        <div class="slider__tabs">
+            <div class="slider__tab1">WOMEN'S</div>
+            <div class="slider__tab2">MENS</div>
+            <div class="slider__tab3">KIDS</div>
+            </div>
+            
+            <div class="cards">
+                <div class="cards__top">
+                <div class="cards__top__1 padding">
+                    <div class="card__image">
+                      <div>
+                    <img class="card__image--front" src="img/jpg1.jpg">
+                    <img class="card__image--back" src="img/jpg2.jpg">
+                      </div>
+                      <div class="card__image--icons">
+                          <div> <i class="fa fa-share-alt"></i> </div>
+                           <div> <i class="fa fa-search"></i></div>
+                            <div> <i class="fa fa-heart"></i> </div>
+                      </div>
+                
+                      <a class="card__image--button" href="#"><i class="fa fa-cart-plus"></i>
+                       Select option
+                      </a>
+                
+                   </div>
+                  <div><a  class="link-one" href="#">Preasent In Ante</a></div>
+                    <div><a class="link-two" href="#">Shop</a></div>
+                    <div><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></div>
+                    <div>
+                    <span>$ 129.00</span>
+                  </div>
+                
+                </div>
+                <div class="cards__top__1 padding">
+                    <div class="card__image">
+                      <div>
+                    <img class="card__image--front" src="img/jpg3.jpg">
+                    <img class="card__image--back" src="img/jpg4.jpg">
+                      </div>
+                      <div class="card__image--icons">
+                          <div> <i class="fa fa-share-alt"></i> </div>
+                           <div> <i class="fa fa-search"></i></div>
+                            <div> <i class="fa fa-heart"></i> </div>
+                      </div>
+                
+                      <a class="card__image--button" href="#"><i class="fa fa-cart-plus"></i>
+                       Select option
+                      </a>
+                
+                   </div>
+                  <div><a  class="link-one" href="#">Preasent In Ante</a></div>
+                    <div><a class="link-two" href="#">Shop</a></div>
+                    <div><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></div>
+                    <div>
+                    <span>$ 129.00</span>
+                  </div>
+                
+                </div>
+                <div class="cards__top__1 padding">
+                    <div class="card__image">
+                      <div>
+                    <img class="card__image--front" src="img/jpg5.jpg">
+                    <img class="card__image--back" src="img/jpg6.jpg">
+                      </div>
+                      <div class="card__image--icons">
+                          <div> <i class="fa fa-share-alt"></i> </div>
+                           <div> <i class="fa fa-search"></i></div>
+                            <div> <i class="fa fa-heart"></i> </div>
+                      </div>
+                
+                      <a class="card__image--button" href="#"><i class="fa fa-cart-plus"></i>
+                       Select option
+                      </a>
+                
+                   </div>
+                  <div><a  class="link-one" href="#">Preasent In Ante</a></div>
+                    <div><a class="link-two" href="#">Shop</a></div>
+                    <div><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></div>
+                    <div>
+                    <span>$ 129.00</span>
+                  </div>
+                
+                </div>
+                <div class="cards__top__1 padding">
+                    <div class="card__image">
+                      <div>
+                    <img class="card__image--front" src="img/jpg7.jpg">
+                    <img class="card__image--back" src="img/jpg8.jpg">
+                      </div>
+                      <div class="card__image--icons">
+                          <div> <i class="fa fa-share-alt"></i> </div>
+                           <div> <i class="fa fa-search"></i></div>
+                            <div> <i class="fa fa-heart"></i> </div>
+                      </div>
+                
+                      <a class="card__image--button" href="#"><i class="fa fa-cart-plus"></i>
+                       Select option
+                      </a>
+                
+                   </div>
+                  <div><a  class="link-one" href="#">Preasent In Ante</a></div>
+                    <div><a class="link-two" href="#">Shop</a></div>
+                    <div><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></div>
+                    <div>
+                    <span>$ 129.00</span>
+                  </div>
+                
+                </div>
+                </div>
+                
+            <div class="cards">
+                <div class="cards__top">
+                <div class="cards__top__1 padding">
+                    <div class="card__image">
+                      <div>
+                    <img class="card__image--front" src="img/jpg9.jpg">
+                    <img class="card__image--back" src="img/jpg10.jpg">
+                      </div>
+                      <div class="card__image--icons">
+                          <div> <i class="fa fa-share-alt"></i> </div>
+                           <div> <i class="fa fa-search"></i></div>
+                            <div> <i class="fa fa-heart"></i> </div>
+                      </div>
+                
+                      <a class="card__image--button" href="#"><i class="fa fa-cart-plus"></i>
+                       Select option
+                      </a>
+                
+                   </div>
+                  <div><a  class="link-one" href="#">Preasent In Ante</a></div>
+                    <div><a class="link-two" href="#">Shop</a></div>
+                    <div><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></div>
+                    <div>
+                    <span>$ 129.00</span>
+                  </div>
+                
+                </div>
+                <div class="cards__top__1 padding">
+                    <div class="card__image">
+                      <div>
+                    <img class="card__image--front" src="img/jpg11.jpg">
+                    <img class="card__image--back" src="img/jpg12.jpg">
+                      </div>
+                      <div class="card__image--icons">
+                          <div> <i class="fa fa-share-alt"></i> </div>
+                           <div> <i class="fa fa-search"></i></div>
+                            <div> <i class="fa fa-heart"></i> </div>
+                      </div>
+                
+                      <a class="card__image--button" href="#"><i class="fa fa-cart-plus"></i>
+                       Select option
+                      </a>
+                
+                   </div>
+                  <div><a  class="link-one" href="#">Preasent In Ante</a></div>
+                    <div><a class="link-two" href="#">Shop</a></div>
+                    <div><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></div>
+                    <div>
+                    <span>$ 129.00</span>
+                  </div>
+                
+                </div>
+                <div class="cards__top__1 padding">
+                    <div class="card__image">
+                      <div>
+                    <img class="card__image--front" src="img/jpg13.jpg">
+                    <img class="card__image--back" src="img/jpg14.jpg">
+                      </div>
+                      <div class="card__image--icons">
+                          <div> <i class="fa fa-share-alt"></i> </div>
+                           <div> <i class="fa fa-search"></i></div>
+                            <div> <i class="fa fa-heart"></i> </div>
+                      </div>
+                
+                      <a class="card__image--button" href="#"><i class="fa fa-cart-plus"></i>
+                       Select option
+                      </a>
+                
+                   </div>
+                  <div><a  class="link-one" href="#">Preasent In Ante</a></div>
+                    <div><a class="link-two" href="#">Shop</a></div>
+                    <div><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></div>
+                    <div>
+                    <span>$ 129.00</span>
+                  </div>
+                
+                </div>
+                <div class="cards__top__1 padding">
+                    <div class="card__image">
+                      <div>
+                    <img class="card__image--front" src="img/jpg15.jpg">
+                    <img class="card__image--back" src="img/jpg16.jpg">
+                      </div>
+                      <div class="card__image--icons">
+                          <div> <i class="fa fa-share-alt"></i> </div>
+                           <div> <i class="fa fa-search"></i></div>
+                            <div> <i class="fa fa-heart"></i> </div>
+                      </div>
+                
+                      <a class="card__image--button" href="#"><i class="fa fa-cart-plus"></i>
+                       Select option
+                      </a>
+                
+                   </div>
+                  <div><a  class="link-one" href="#">Preasent In Ante</a></div>
+                    <div><a class="link-two" href="#">Shop</a></div>
+                    <div><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></div>
+                    <div>
+                    <span>$ 129.00</span>
+                  </div>
+                
+                </div>
+                </div>
+                
+             <!-- product slider -->
+            
+    </div>
+            </div>
+    </div>
+     <!-- customer review -->
+     <secction class="customer__review overlay">
+        
+            <div class="customer__bg ">
+                <div class="customer__content">
+                    <div class="customer__title">
+                        <h2>CUSTOMERS REVIEWS</h2>
+                    </div>
+                    <i class="fa fa-quote-right"></i>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                         Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    
+                    <div class="customer-img">
+                        <img src="img/demo2-testi1.jpg" alt="">
+                    </div>
+                    <div class="customer__name">Jane Doe</div>
+                    <div class="customer__des">online marketer</div>
+    
+                </div>
+            </div>
+        
+      
+       
+     </secction>
+     <section class="featured-products ">
+        <div class="section-title">
+            <span>AKIRA COLLECTIONS</span>
+            <h3>OUR BESTSELLERS</h3>
+            <p>Nullam gravida, dolor ac ultrices lobortis, mi dolor justo.</p>
+        </div>
+        <div class="cards py-top">
+            <div class="cards__top">
+            <div class="cards__top__1 padding">
+                <div class="card__image">
+                  <div>
+                <img class="card__image--front" src="img/jpg1.jpg">
+                <img class="card__image--back" src="img/jpg2.jpg">
+                  </div>
+                  <div class="card__image--icons">
+                      <div> <i class="fa fa-share-alt"></i> </div>
+                       <div> <i class="fa fa-search"></i></div>
+                        <div> <i class="fa fa-heart"></i> </div>
+                  </div>
+            
+                  <a class="card__image--button" href="#"><i class="fa fa-cart-plus"></i>
+                   Select option
+                  </a>
+            
+               </div>
+              <div><a  class="link-one" href="#">Preasent In Ante</a></div>
+                <div><a class="link-two" href="#">Shop</a></div>
+                <div><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></div>
+                <div>
+                <span>$ 129.00</span>
+              </div>
+            
+            </div>
+            <div class="cards__top__1 padding">
+                <div class="card__image">
+                  <div>
+                <img class="card__image--front" src="img/jpg3.jpg">
+                <img class="card__image--back" src="img/jpg4.jpg">
+                  </div>
+                  <div class="card__image--icons">
+                      <div> <i class="fa fa-share-alt"></i> </div>
+                       <div> <i class="fa fa-search"></i></div>
+                        <div> <i class="fa fa-heart"></i> </div>
+                  </div>
+            
+                  <a class="card__image--button" href="#"><i class="fa fa-cart-plus"></i>
+                   Select option
+                  </a>
+            
+               </div>
+              <div><a  class="link-one" href="#">Preasent In Ante</a></div>
+                <div><a class="link-two" href="#">Shop</a></div>
+                <div><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></div>
+                <div>
+                <span>$ 129.00</span>
+              </div>
+            
+            </div>
+            <div class="cards__top__1 padding">
+                <div class="card__image">
+                  <div>
+                <img class="card__image--front" src="img/jpg5.jpg">
+                <img class="card__image--back" src="img/jpg6.jpg">
+                  </div>
+                  <div class="card__image--icons">
+                      <div> <i class="fa fa-share-alt"></i> </div>
+                       <div> <i class="fa fa-search"></i></div>
+                        <div> <i class="fa fa-heart"></i> </div>
+                  </div>
+            
+                  <a class="card__image--button" href="#"><i class="fa fa-cart-plus"></i>
+                   Select option
+                  </a>
+            
+               </div>
+              <div><a  class="link-one" href="#">Preasent In Ante</a></div>
+                <div><a class="link-two" href="#">Shop</a></div>
+                <div><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></div>
+                <div>
+                <span>$ 129.00</span>
+              </div>
+            
+            </div>
+            <div class="cards__top__1 padding">
+                <div class="card__image">
+                  <div>
+                <img class="card__image--front" src="img/jpg7.jpg">
+                <img class="card__image--back" src="img/jpg8.jpg">
+                  </div>
+                  <div class="card__image--icons">
+                      <div> <i class="fa fa-share-alt"></i> </div>
+                       <div> <i class="fa fa-search"></i></div>
+                        <div> <i class="fa fa-heart"></i> </div>
+                  </div>
+            
+                  <a class="card__image--button" href="#"><i class="fa fa-cart-plus"></i>
+                   Select option
+                  </a>
+            
+               </div>
+              <div><a  class="link-one" href="#">Preasent In Ante</a></div>
+                <div><a class="link-two" href="#">Shop</a></div>
+                <div><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></div>
+                <div>
+                <span>$ 129.00</span>
+              </div>
+            
+            </div>
+            </div>
+    </section>
+    <secction class="style">
+        <div class="new__style bg-2">
+            <p>WE MAKE IT EASY TO EXPRIENCE CREATIVITY</p>
+            <h2>STYLISH NEW DESIGN</h2>
+            <p>Welcome to the home of women's fashion clothing & accessories at Italy
+            </p>
+            <a href="#">shop now!</a>
+        </div>
+
+    </secction>
+    <!-- blog section starts -->
+<section class="blogs py-top" id="blogs">
+
+
+	<div class="box-container">
+
+        <div class="box">
+            <div class="image">
+                    <img src="img/11-home_default.jpg" alt="">
+            </div>
+            <div class="content">
+                <span>8 may</span>
+                    <a href="#" class="title">Cras viverra justo ut</a>
+                    <p>Vestibulum malesuada varius mi id congue. Phasellus aliquam mollis ex,...</p>
+                    <a href="#" class="btn">read more</a>
+            </div>
+    </div>
+
+			<div class="box">
+					<div class="image">
+							<img src="img/12-home_default.jpg" alt="">
+					</div>
+					<div class="content">
+                        <span>8 may</span>
+							<a href="#" class="title">Cras viverra justo ut</a>
+							<p>Vestibulum malesuada varius mi id congue. Phasellus aliquam mollis ex,...</p>
+							<a href="#" class="btn">read more</a>
+					</div>
+			</div>
+
+			<div class="box">
+					<div class="image">
+							<img src="img/13-home_default.jpg" alt="">
+					</div>
+					<div class="content">
+                        <span>8 may</span>
+							<a href="#" class="title">Cras viverra justo ut</a>
+							<p>Vestibulum malesuada varius mi id congue. Phasellus aliquam mollis ex,...</p>
+							<a href="#" class="btn">read more</a>
+					</div>
+			</div>
+
+	</div>
+
+</section>
+<!-- blog section ends -->
+<secction class="news__letter py-top">
+    <div class="news-sign">
+        <h2>sign-up <span>newsletter</span></h2>
+        <p>Sign up for the latest news, offers and styles
+        </p>
+    </div>
+    <div class="news-check">
+        <form action="" class="form-news">
+            <input  class="news_input" type="email" placeholder="Your email address" required>
+            <button type="submit"><span>Subscribe</span></button>
+            
+        </form>
+        <label >
+            <input type="checkbox" required>
+            Enim quis fugiat consequat elit minim nisi eu occaecat occaecat deserunt aliquip nisi ex deserunt
+        </label>
+    </div>
+
+</secction>
+<footer >
+    <div class="footer-section">
+        <div class="logo">
+            <div class="logo-img"><img src="img/demo2-logo-w.png" alt=""></div>
+            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede ...</p>
+        </div>
+        <div class="footer-contact">
+            <ul class="contact-list">
+                <h3>contact us</h3>
+                <li>Address: 123 Fake Street, New York</li>
+                <li>Phone: (08) 8827 633354</li>
+                <li>Fax: (08) 8827 633354</li>
+                <li>Mail: contact@yoursite.com</li>
+                <li>Openning: 8:00 - 19:00, Mon - Sat</li>
+            </ul>
+        </div>
+        <div class="footer-contact">
+            <ul class="contact-list">
+                <h3>INFORMATION</h3>
+                <li><a href="#">About us</a></li>
+                <li><a href="#">Legal Notice</a></li>
+                <li><a href="#">Addresses</a></li>
+                <li><a href="#">Order</a></li>
+                <li><a href="#">Payment</a></li>
+                <li><a href="#">Suppliers</a></li>
+            </ul>
+        </div>
+        <div class="footer-contact">
+            <ul class="contact-list">
+                <h3>MY ACCOUNT</h3>
+                <li><a href="#">About us</a></li>
+                <li><a href="#">Legal Notice</a></li>
+                <li><a href="#">Addresses</a></li>
+                <li><a href="#">Order</a></li>
+                <li><a href="#">Payment</a></li>
+                <li><a href="#">Suppliers</a></li>
+            </ul>
+        </div>
+        <div class="footer-contact">
+            <ul class="contact-list">
+                <h3>COMPANY</h3>
+                <li><a href="#">About us</a></li>
+                <li><a href="#">Legal Notice</a></li>
+                <li><a href="#">Addresses</a></li>
+                <li><a href="#">Order</a></li>
+                <li><a href="#">Payment</a></li>
+                <li><a href="#">Suppliers</a></li>
+            </ul>
+        </div>
+
+    </div>
+    <hr class="line">
+    <div class="copyright">
+        <p><a href="#">RETURNS</a></p>
+        <p><a href="#">ORDERS HISTORY</a></p>
+        <p><a href="#">SITE MAP</a></p>
+        <p><a href="#">TESTIMONIAL</a></p>
+    </div>
+    <div class="copy-container">
+    <p class="copy-text">Copyright © 2021 Akira Store. All Rights Reserved. </p>
+    </div>
+    <div class="payment-img">
+        <img src="img/demo2-payment.jpg" alt="">
+    </div>
+    
+</footer>
+   
+    
+     <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>
